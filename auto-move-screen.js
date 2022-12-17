@@ -32,4 +32,5 @@ function startScroll(){
         paused = true;
         }
 }
+                
 });
