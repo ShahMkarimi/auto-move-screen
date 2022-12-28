@@ -1,7 +1,7 @@
 let scrollerId;
 let paused = true;
 let speed = 3;
-let interval = speed*5; //you can change the speed form here by the change if 5 number
+let interval = speed*5; //you can change the speed form here by the change of "5" number
 
 function startScroll(){
     let id = setInterval(function(){
@@ -22,7 +22,7 @@ function startScroll(){
     }
             
             document.body.addEventListener('keypress', function(event){
-            if (event.which==13 || event.keyCode ==13){
+            if (event.which==13 || event.keyCode ==13){//change the control key by the code key number
 
         if (paused == true) {
             scrollerId = startScroll();
