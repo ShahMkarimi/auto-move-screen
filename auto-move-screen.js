@@ -6,13 +6,14 @@ let interval = speed*5; //you can change the speed form here by the change of "5
 function startScroll(){
     let id = setInterval(function(){
          window.scrollBy(0,2);
-          if(
+          if (
             window.innerHeight + window.scrollY ==
             document.body.offsetHeight
         ) {
 
         stopScroll();
     }
+        
             },interval);
           return id;
     }
@@ -27,6 +28,7 @@ function startScroll(){
         if (paused == true) {
             scrollerId = startScroll();
             paused = false;
+            
         }else{
         stopScroll();
         paused = true;
