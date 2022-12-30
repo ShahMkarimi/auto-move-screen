@@ -1,3 +1,4 @@
+// this is all code
 let scrollerId;
 let paused = true;
 let speed = 3;
