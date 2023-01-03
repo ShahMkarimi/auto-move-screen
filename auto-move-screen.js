@@ -34,7 +34,8 @@ function startScroll(){
         stopScroll();
         paused = true;
         }
-}                
+}   
+                
 });
 
 
