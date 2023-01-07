@@ -20,6 +20,7 @@ function startScroll(){
           return id;
     }
 
+
     function stopScroll(){
         clearInterval(scrollerId);
     }
@@ -31,7 +32,9 @@ function startScroll(){
             scrollerId = startScroll();
             paused = false;
             
-        }else{
+        }
+                
+       else{
         stopScroll();
         paused = true;
         }
