@@ -20,6 +20,7 @@ function startScroll() {
           return id;
     }
 
+
     function stopScroll() {
         clearInterval(scrollerId);
     }
