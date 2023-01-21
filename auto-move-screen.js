@@ -37,8 +37,7 @@ function startScroll() {
         paused = true;
         }
 }   
-    
-                
+              
 });
 
 
