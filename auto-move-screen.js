@@ -15,7 +15,6 @@ function startScroll() {
         stopScroll();
     }
         
-        
             },interval);
           return id;
     }
