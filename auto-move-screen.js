@@ -1,4 +1,4 @@
-// this is all code
+// this is all code jut copy and past
 let scrollerId;
 let paused = true;
 let speed = 3;
