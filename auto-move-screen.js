@@ -22,7 +22,6 @@ function startScroll() {
     }
 
 
-
     function stopScroll() {
         clearInterval(scrollerId);
     }
