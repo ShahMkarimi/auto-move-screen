@@ -33,6 +33,7 @@ function startScroll() {
             
         }
                 
+                
        else {
         stopScroll();
         paused = true;
