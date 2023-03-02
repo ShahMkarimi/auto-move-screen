@@ -9,6 +9,7 @@ function startScroll() {
     let id = setInterval(function() {
          window.scrollBy(0,2);
           if (
+              
             window.innerHeight + window.scrollY ==
             document.body.offsetHeight
         ) {
