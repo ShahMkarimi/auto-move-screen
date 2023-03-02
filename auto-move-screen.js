@@ -40,7 +40,8 @@ function startScroll() {
         paused = true;
         }
 }   
-              
+      
+                
 });
 
 
