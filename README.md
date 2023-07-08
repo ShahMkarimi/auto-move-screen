@@ -5,7 +5,7 @@ start and stop with enter key
 you can change the speed and the control key.
 control key is change able.
 control by enter key.
-it can clean your code
+it can clean your code.
 
 
 
