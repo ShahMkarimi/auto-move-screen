@@ -1,4 +1,4 @@
-// this is all code jut copy and past
+// just copy and import to your project
 
 let scrollerId;
 let paused = true;
