@@ -14,7 +14,6 @@ function startScroll() {
   }, interval);
   return id;
 }
-
 function stopScroll() {
   clearInterval(scrollerId);
 }
