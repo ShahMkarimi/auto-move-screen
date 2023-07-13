@@ -1,33 +1,40 @@
-// just copy and import to your project
+// this branche is about reach code in real I rewrite the code in react
 
-let scrollerId;
-let paused = true;
-let speed = 3;
-let interval = speed * 7; //you can change the speed form here by the change of "7 seconde" number.
+import React, { useState, useEffect } from "react";
 
-function startScroll() {
-  let id = setInterval(function () {
-    window.scrollBy(0, 2);
-    if (window.innerHeight + window.scrollY == document.body.offsetHeight) {
-      stopScroll();
+
+const AutoMove = () => {
+  const [paused, setPaused] = useState(true);
+  const [speed, setSpeed] = useState(3);
+  const interval = speed * 7; //you can change the speed form here by the change of "7 seconde" number.
+
+  useEffect(() => {
+    let scrollerId;
+    if (!paused) {
+      scrollerId = setInterval(() => {
+        window.scrollBy(0, 2);
+        if (window.innerHeight + window.scrollY == document.body.offsetHeight) {
+          setPaused(true);
+        }
+      }, interval);
     }
-  }, interval);
-  return id;
-}
-function stopScroll() {
-  clearInterval(scrollerId);
-}
+    return () => {
+      clearInterval(scrollerId);
+    };
+  }, [paused, interval]);
 
-document.body.addEventListener("keypress", function (event) {
-  if (event.which == 13 || event.keyCode == 13) {
-    //change the control key by the code key number
-
-    if (paused == true) {
-      scrollerId = startScroll();
-      paused = false;
-    } else {
-      stopScroll();
-      paused = true;
+  const handleKeyPress = (event) => {
+    if (event.which == 13 || event.keyCode == 13) {
+      //change the control key by the code key number
+      setPaused(!paused);
     }
-  }
-});
+  };
+
+  return (
+    <div onKeyPress={handleKeyPress} tabIndex="0">
+      {/* your content here */}
+    </div>
+  );
+};
+
+export default AutoMove;
