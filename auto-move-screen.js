@@ -1,7 +1,7 @@
 // this branche is about reach code in real I rewrite the code in react
 
 import React, { useState, useEffect } from "react";
-import App from "../App";
+
 
 const AutoMove = () => {
   const [paused, setPaused] = useState(true);
