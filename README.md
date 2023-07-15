@@ -1,5 +1,5 @@
 # auto-move-screen
-if you are hate of scrollingy so use this component
+if you are hate of scrollingy so use this component 
 it make easy to look your page with out scrolling
 just copy the code to your script part and use
 start and stop with enter key
